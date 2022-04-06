@@ -1,53 +1,62 @@
-
-body{
+.body{
     margin:0;
-    /* background-color: #333; */
-    height: 100vh;
-    background-image: url(assets/wallpaper.png);
+    min-height: 100vh;
+    background-image: url(../assets/wallpaper.png);
     background-position: center;
     background-size:cover;
 
-    font-family: 'JetBrains Mono', monospace;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem
 }
 
 .card{
-    text-align: center;
     background-color: #fff;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-    width: 400px;
     border-radius: 10px;
-    padding-top: 1rem;
     box-shadow: 5px 5px 25px rgba(90, 90, 90, 0.518);
+
+    padding-top: 1rem;
+    gap: 1rem;
 }
 
-.header, .article{
-    padding: 0rem 2rem; 
-    margin-bottom: 1rem;
-}
-.article__card-title{
-    margin-top: 0;
+.header{
+    display: flex; 
 }
 .header__image-container{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
+    max-width: 180px;
     display: flex;
-    /* border: 4px solid rgba(255, 255, 255, 0); */
-    /* outline: 4px solid rgb(167, 167, 167); */
+    margin:0;
+}
+.header__profile-image{
+    width: 100%;
+    border-radius: 50%;
 }
 
-.header-profile-image{
-    width: 100%;
+.article-container{
+    margin:0;
+    box-sizing: border-box;
+    max-width: 365px;
+    text-align: center;
+    padding: 0rem 2rem; 
+}
+
+.article__card-title{
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .footer{
@@ -90,7 +99,7 @@ body{
     font-size: 1.3rem;
 }
 .text--medium{
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 .text--small{
     font-size: 0.9rem;
