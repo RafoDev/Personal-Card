@@ -29,11 +29,11 @@ body{
     box-shadow: 5px 5px 25px rgba(90, 90, 90, 0.518);
 }
 
-.header, .main{
+.header, .article{
     padding: 0rem 2rem; 
     margin-bottom: 1rem;
 }
-.main__title{
+.article__card-title{
     margin-top: 0;
 }
 .header__image-container{
